@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameverse - Iniciar Sesión de Acceso</title>
+    <link rel="stylesheet" href="./src/output.css"> 
+</head>
+
+<body class="bg-[#0a0f1a] text-white flex items-center justify-center min-h-screen font-inter p-4">
+
+    <div class="w-full max-w-lg bg-[#0d1526] p-12 rounded-2xl border-t-4 border-blue-600 shadow-2xl 
+                transition-all duration-500 hover:shadow-blue-600/40">
+
+        <div class="flex flex-col items-center mb-10">
+            <img src="https://liquipedia.net/commons/images/7/7d/Gameverse_Mission_2024_allmode.png" 
+                 alt="Gameverse Logo" class="w-28 h-auto brightness-110 mb-4 drop-shadow-md">
+            <h1 class="text-4xl font-extrabold text-blue-400 font-orbitron tracking-wide">
+                ACCESO AL SISTEMA
+            </h1>
+            <p class="text-gray-400 text-base mt-2">Introduce tus credenciales para continuar.</p>
+        </div>
+
+        <form action="#" method="POST" class="space-y-7">
+            
+            <div>
+                <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">
+                    <span class="text-blue-400">#</span> Correo Electrónico
+                </label>
+                <input type="email" id="email" name="email" required
+                       class="w-full px-5 py-3 bg-[#0f1a2e] border-2 border-transparent rounded-lg 
+                              text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 
+                              focus:ring-4 focus:ring-blue-500/30 transition duration-300 shadow-inner"
+                       placeholder="usuario@gameverse.com">
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-semibold text-gray-300 mb-2">
+                    <span class="text-blue-400">#</span> Contraseña
+                </label>
+                <input type="password" id="password" name="password" required
+                       class="w-full px-5 py-3 bg-[#0f1a2e] border-2 border-transparent rounded-lg 
+                              text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 
+                              focus:ring-4 focus:ring-blue-500/30 transition duration-300 shadow-inner"
+                       placeholder="Ingresa tu contraseña secreta">
+            </div>
+
+            <div class="flex justify-between items-center text-sm pt-2">
+                <div class="flex items-center">
+                    <input id="remember-me" name="remember-me" type="checkbox" 
+                           class="h-4 w-4 text-blue-500 bg-gray-800 border-gray-700 rounded focus:ring-blue-500 
+                                  cursor-pointer appearance-none checked:bg-blue-500 transition duration-150">
+                    <label for="remember-me" class="ml-3 text-gray-400 font-medium select-none">
+                        Mantener sesión activa
+                    </label>
+                </div>
+
+                <a href="#" class="font-medium text-blue-400 hover:text-blue-300 transition hover:underline">
+                    ¿Problemas para acceder?
+                </a>
+            </div>
+
+            <div class="pt-2">
+                <button type="submit"
+                        class="w-full flex justify-center py-3.5 px-4 rounded-lg 
+                               text-xl font-extrabold text-white 
+                               bg-gradient-to-r from-blue-700 to-blue-600 
+                               hover:from-blue-600 hover:to-blue-500 transition duration-300 
+                               shadow-lg shadow-blue-700/50 
+                               focus:outline-none focus:ring-4 focus:ring-blue-500/50">
+                    INICIAR SESIÓN
+                </button>
+            </div>
+        </form>
+
+        <div class="mt-10 text-center text-base border-t border-blue-900/50 pt-6">
+            <p class="text-gray-400">
+                ¿Eres nuevo en **Gameverse**? 
+                <a href="register.html" class="font-extrabold text-blue-400 hover:text-blue-300 transition hover:underline">
+                    Crea una cuenta ahora
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
